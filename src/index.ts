@@ -5,3 +5,5 @@ type User = {
 const ximo: User = {
   name: 'ximo',
 };
+
+console.log(ximo);
