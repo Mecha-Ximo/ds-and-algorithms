@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { bubbleSort } from './bubbleSort';
+import { bubbleSort } from './bubbleSort.js';
 
 // TODO: add tests for other data types
 
