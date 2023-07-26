@@ -3,14 +3,18 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "repository": {
     "url": "https://github.com/Mecha-Ximo/ds-and-algorithms.git"
   },
   "scripts": {
-    "prettier-format": "prettier --write --config .prettierrc src/**/*.ts",
+    "build": "tsc",
+    "dev": "tsx src/index",
+    "dev:file": "tsx",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
-    "build": "tsc"
+    "prettier-format": "prettier --write --config .prettierrc src/**/*.ts",
+    "test": "vitest"
   },
   "keywords": [
     "data",
@@ -26,6 +30,8 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.0",
-    "typescript": "^5.1.6"
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
   }
 }
