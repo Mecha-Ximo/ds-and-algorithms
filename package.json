@@ -14,7 +14,8 @@
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
     "prettier-format": "prettier --write --config .prettierrc src/**/*.ts",
-    "test": "vitest"
+    "test": "vitest --run --globals",
+    "test:watch": "vitest --globals"
   },
   "keywords": [
     "data",
