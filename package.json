@@ -16,6 +16,11 @@
     "prettier-format": "prettier --write --config .prettierrc src/**/*.ts",
     "test": "vitest"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm prettier-format && pnpm lint"
+    }
+  },
   "keywords": [
     "data",
     "structures",
@@ -29,6 +34,7 @@
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
     "prettier": "^3.0.0",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6",
